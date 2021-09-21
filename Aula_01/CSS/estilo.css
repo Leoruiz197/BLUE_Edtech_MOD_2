@@ -1,0 +1,42 @@
+body{
+    background-image: url("../media/imagem/download.jfif"); /* imagem de fundo de tela*/
+    background-repeat: repeat-x; /* config a repeticao do imagem do fundo de tela*/
+    text-align:center; /*alinhamento do texto ao centro*/
+}
+h1{
+    color: rgb(30, 210, 210); /* color é definacao de cor no html*/
+}
+h2{
+    color: cyan;
+}
+h1{
+    color: blueviolet;
+}
+a{ /* estilizacao do botao */
+    color: rgb(226, 192, 43);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+a:hover{ /* estilo ao deixar o mouse sobre */
+    background-color: yellowgreen;
+}
+
+/* CLASS */
+
+.texto{ /* . é para classe */
+    color: rgb(105, 216, 31);
+    border: solid 5px black;
+    border-radius: 15px 5px 10px 30px;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+/* ID */
+
+#texto1{ /* # é para ID */
+    color: chartreuse;
+}
