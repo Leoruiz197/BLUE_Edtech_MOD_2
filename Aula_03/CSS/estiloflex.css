@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.elemento1{
+    width: 100px;
+    margin: 10px;
+    padding: 20px 15px;
+    background-color: orange;
+    flex-shrink: 3;
+}
+
+.elemento2{
+    width:200px;
+    margin: 10px;
+    padding: 30px 25px;
+    background-color:orangered;
+    max-height: 300px;
+    overflow: scroll;
+    /* order: -1; */
+    align-self: flex-end;
+}
+
+.elemento3{
+    width: 50px;
+    margin: 10px;
+    padding: 5px;
+    min-height: 200px;
+    background-color: blue;
+    /* order: -2; */
+    flex-grow: 3;
+}
+.elementos{
+    margin-top: 0px;
+    min-height: 200px;
+}
+.container{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}

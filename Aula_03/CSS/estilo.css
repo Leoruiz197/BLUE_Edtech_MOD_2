@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2{
+    color: blueviolet;
+}
+h1{
+    text-align: center;
+}
+a{
+   color: white;
+   text-decoration: none;
+   border: 2px solid black; 
+   padding: 15px 10px;
+   border-radius: 15px;
+   background-color: blueviolet;
+}
+a:hover{
+    color: white;
+    background-color: rgb(164, 70, 192);
+}
+
+.divs{
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 20px;
+    /* text-shadow: 2px 2px 5px rgba(195, 29, 29, 0.76); */
+    /* -webkit-box-shadow: 3px 5px 21px 0px rgba(0,0,0,0.62); 
+    box-shadow: 3px 5px 21px 0px rgba(0,0,0,0.62); */
+}
+.navegacao{
+    margin: 20px;
+}
+
+img{
+    border: 20px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+th{
+    border: 1px solid black;
+    margin: 0px;
+}
