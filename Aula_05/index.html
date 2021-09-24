@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/estilo.css">
+        <title>Site com JS</title>
+    </head>
+    <body>
+        <nav>
+            <button onclick="sec1()">Sessão 1</button>
+            <button onclick="sec2()">Sessão 2</button>
+        </nav>
+        <section id="primeiro">
+            <section id="nome">
+                <input id="inputnome" type="text" placeholder="Insira seu nome aqui">
+            </section>
+            <section id="resultado">
+                <span id="spanresultado">nome</span>
+            </section>
+            <button onclick="nome()">botao</button>
+        </section>
+        <section id="segundo">
+            <section id="calculo">
+                <input type="text" id="peso" placeholder="insira seu peso aqui">
+                <input type="text" id="altura" placeholder="insira sua altura aqui">
+                <button onclick="calcularIMC()">Calcular</button>
+            </section>
+            <section id="resultadoIMC">
+                <span id="spanIMC"></span>
+            </section>
+        </section>
+        
+        <script type="text/javascript" src="JS/script.js"></script>
+    </body>
+</html>
