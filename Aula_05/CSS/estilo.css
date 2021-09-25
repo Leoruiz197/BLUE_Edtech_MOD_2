@@ -4,3 +4,9 @@
 #segundo{
     display: flex;
 }
+li{
+    color: black;
+}
+li:hover{
+    color: darkgray;
+}
