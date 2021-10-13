@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Blue EJS</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="<%= cargo.Nome%>">
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" name="descricao" id="descricao" value="<%= cargo.Descriçao%>">
+
+        <label for="setor">Setor:</label>
+        <input type="number" name="setor" id="setor" value="<%= cargo.Setor%>">
+
+        <input type="hidden" name="id" value="<%= cargo.ID%>">
+        <!-- <input type="file" name="arquivoimg" accept=".png, .jpg, .jpeg, .gif" multiple> -->
+
+        <button type="submit">enviar</button>
+    </form>
+
+</body>
+</html>

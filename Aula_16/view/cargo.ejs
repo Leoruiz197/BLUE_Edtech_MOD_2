@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Blue EJS</title>
+</head>
+<body>
+
+    <% cargo.forEach(item => { %>
+        <h2><%= item.Nome %></h2>  
+        <p><%= item.Descriçao %></p> 
+        <span><%= item.Setor %></span>    
+        <a href="/cargoeditar/<%=item.ID%>"><button>Editar</button></a>    
+    <% }) %> 
+
+</body>
+</html>
