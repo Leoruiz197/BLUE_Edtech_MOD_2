@@ -31,7 +31,7 @@ app.post('/cargocriar', async (req,res) =>{
         Descriçao:descricao,
         Setor:setor,
     });
-    res.json(cargo);
+    res.redirect("/cargo");
 });
 
 app.get('/cargoeditar/:id', async (req,res) => {
@@ -41,14 +41,22 @@ app.get('/cargoeditar/:id', async (req,res) => {
 
 app.post('/cargoeditar/:id', async (req,res) =>{
     const cargo = await Cargo.findByPk(req.params.id);
-    const { id, nome, descricao, setor} = req.body;
+    const { nome, descricao, setor} = req.body;
     
     cargo.Nome = nome;
     cargo.Descriçao = descricao;
     cargo.Setor = setor;
 
-    const cargoeditado = await cargo.save();
-    res.json(cargoeditado);
+    await cargo.save();
+    res.redirect("/cargo");
+});
+
+app.get('/cargodelete/:id', async (req,res) => {
+    const cargo = await Cargo.findByPk(req.params.id);
+
+    await cargo.destroy();
+
+    res.redirect("/cargo");
 });
 
 
